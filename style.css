@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #E0F0FF;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+.container_calculadora {
+    border: 2px solid #1875E8;
+    border-radius: 10px;
+    width: 250px;
+}
+
+#limpar {
+    margin-bottom: 20px;
+}
+
+.container_input {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+#numero1 {
+    margin-right: 10px;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none; /* Remove as setas dos inputs */
+}
+
+#numero1, #numero2 {
+    border-radius: 10px;
+    height: 45px;
+    width: 70px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.container_botoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 200px;
+    margin: auto;
+}
+
+.container_botao {
+    border-radius: 16px;
+    background: #1875E8;
+    padding: 16px 24px;
+    font-size: 24px;
+    font-weight: 700;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 35px;
+    padding-bottom: 3rem;
+    border-radius: 5px;
+}
+
+.destacar {
+    color: #1875E8;
+    font-weight: bold;
+}
+
+button:disabled {
+    background-color: gray;
+    cursor: auto;
+}
+
+.container_botao:hover {
+    background-color: #0d6efd;
+}
